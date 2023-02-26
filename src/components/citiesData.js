@@ -37,12 +37,12 @@ export default class componentName extends Component {
         var timespan = localStorage.getItem('date');
 
         if (localArr) {
-            const res = ((new Date()).getTime()) > timespan;       
+            const res = (((new Date()).getTime()) > timespan);       
             if (res) {
                 localStorage.removeItem('weather'); //delete cached
-             
+             console.log("timePassed");
             } else {
-              
+                console.log( "not timePassed");
             }
 
         }
@@ -55,10 +55,11 @@ export default class componentName extends Component {
             Object.values(city.List).map(rec => {
                 cities.push(rec);
             })
-
+            this.setState({weather:[]})
             this.setState({ cities: cities })
 
             //calling api
+            
             for (var i = 0; i < cities.length; i++) {
            
 
@@ -76,23 +77,24 @@ export default class componentName extends Component {
                     })
 
             }
-
+            console.log( "API called");
+            console.log( weatherArr);
+            this.setState({ weather: weatherArr })
+ 
+            if (weatherArr.length != 0) {
             //set time to expire local storage 
             var dates = new Date().setMinutes(new Date().getMinutes() + 5);
-
+           
             //store data in local storage
             localStorage.setItem('date', dates);
-
+            localStorage.setItem('weather', JSON.stringify(weatherArr))  //store data in localStorage
+            }
         } else {
             weatherArr = localArr;
-          
-        }
-
-        this.setState({ weather: weatherArr })
-
-        if (this.state.weather.length != 0) {
-            localStorage.setItem('weather', JSON.stringify(this.state.weather))  //store data in localStorage
-        }
+            console.log( "Not API called");
+            this.setState({ weather: weatherArr })
+        }       
+       
     }
 
 
