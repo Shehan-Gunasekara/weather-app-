@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Routes, Router, BrowserRouter } from 'react-router-dom';
-import AllCities from './pages/allCities';
-import OneCity from './pages/oneCity';
+import AllCities from './pages/allCitiesPage';
+import OneCity from './pages/oneCityPage';
 
 
 function App() {

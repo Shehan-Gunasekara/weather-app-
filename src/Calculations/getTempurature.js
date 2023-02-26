@@ -3,7 +3,9 @@ import "../assets/LayoutCSS/oneCity.css"
 
 
 const getTempurature = props => {
-    console.log(props)
+
+     
+    //convert kelvin to celcius
 
     var temp = Math.floor(props.currentTemp - 273.15)
     var Mintemp = Math.floor(props.minTemp - 273.15)

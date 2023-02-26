@@ -1,8 +1,8 @@
 
 const getTimeDate = props => {
-    console.log(props)
 
 
+     // get date and time from timespan
     var timeSpan = props.timeSpan; 
                             var date = new Date(timeSpan * 1000);
                             var day = date.getDate();

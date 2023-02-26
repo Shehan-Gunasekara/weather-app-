@@ -3,7 +3,7 @@ import "../assets/LayoutCSS/oneCity.css"
 
 
 const getSunDetails = props => {
-    console.log(props)
+
 
      //set sunrise 
      var riseTimeStamp = props.sunRise; 

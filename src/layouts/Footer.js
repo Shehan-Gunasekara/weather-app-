@@ -1,9 +1,11 @@
-import { Grid } from '@mui/material';
+//import dependencies
 import React from 'react';
 
+//import css
 import "../assets/LayoutCSS/Footer.css"
-
-function App() {
+ 
+//this function return footer component
+function Footer() {
   return (
     <div className="Footer">
       <div className='content'>
@@ -13,4 +15,4 @@ function App() {
   );
 }
 
-export default App;
+export default Footer;

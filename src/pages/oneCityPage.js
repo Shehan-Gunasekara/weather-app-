@@ -1,11 +1,15 @@
 import React from "react";
-import Citiesdata from "../components/citiesData"
+
+//import components
 import Footer from "../layouts/Footer"
+import OneCityData from "../components/singleCityData";
 
 function  allCities() {
+
+    //return selected one city weather data
     return(
         <div>
-            <Citiesdata />
+            <OneCityData/>
             <Footer />
         </div>
     )
