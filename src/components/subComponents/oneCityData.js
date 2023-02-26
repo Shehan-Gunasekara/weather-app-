@@ -17,7 +17,7 @@ import Default from "../../assets/backgroundImages/weatherBackgrond/default.jpeg
 import Haze from "../../assets/backgroundImages/weatherBackgrond/Haze.jpg"
 import Rain from "../../assets/backgroundImages/weatherBackgrond/rain.jpg"
 import Mist from "../../assets/backgroundImages/weatherBackgrond/Mist.jpeg"
-
+import Snow from "../../assets/backgroundImages/weatherBackgrond/Snow.jpg"
 
 //import calculation functions
 import GetTimeDate from "../../Calculations/getTimeDate"
@@ -42,6 +42,8 @@ const oneCityData = props => {
         var url = `url(${Haze})`
     } else if (props.dataSet.weather[0].main == "Mist") {
         var url = `url(${Mist})`
+    } else if (props.dataSet.weather[0].main == "Snow") {
+        var url = `url(${Snow})`
     } 
      else {
         var url = `url(${Default})`
