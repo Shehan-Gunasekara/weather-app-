@@ -2,7 +2,7 @@
 .body-div{
     min-height: 97vh;
     
-    background-image: url("../backgroundImages/bodyBackground.jpg");
+    background-image: url("../../assets/backgroundImages/bodyBackground.jpg");
     background-repeat: no-repeat, repeat;
     background-position: center;
     background-size: cover;

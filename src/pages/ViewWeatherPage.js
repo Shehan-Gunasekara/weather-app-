@@ -1,8 +1,8 @@
 import React from "react";
 
 //import components
-import Footer from "../layouts/Footer"
-import OneCityData from "../components/singleCityData";
+
+import OneCityData from "../components/viewWeather/viewWeather";
 
 function  allCities() {
 
@@ -10,7 +10,7 @@ function  allCities() {
     return(
         <div>
             <OneCityData/>
-            <Footer />
+   
         </div>
     )
 }

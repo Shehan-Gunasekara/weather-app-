@@ -1,0 +1,320 @@
+*{
+    margin:0;
+    padding: 0;
+  }
+  
+  .App{
+    padding-bottom: 100%;
+  }
+  .App h1{
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+ 
+    font-size: .05rem;
+  }
+
+
+
+    .lnt{
+      text-align: center;
+      padding-top: 3%;
+     }
+   
+     .lnt h1{
+      color: white;
+      text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+      font-size: 1rem;
+     }
+
+     @media (max-width:8000px){
+        .lnt h1{
+            
+            font-size: calc(0.5vw + 0.25rem);
+        }
+        
+    }
+    
+    
+    @media (max-width:0px){
+        .lnt h1{
+            
+            font-size: calc(0.4vw + 1.25rem);
+        }
+        
+    }
+  
+  .location h3{
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-size: 5rem;
+  }
+
+  @media (max-width:8000px){
+    .location h3{
+        
+        font-size: calc(1.80vw + 0.25rem);
+    }
+    
+}
+
+
+@media (max-width:0px){
+    .location h3{
+        
+        font-size: calc(0.9vw + 0.25rem);
+    }
+    
+}
+  .time{
+    
+  }
+  .location h4{
+    color:red;
+  }
+  
+  
+  .time p{
+    font-size: 12px;
+  }
+  
+  .tempSet{
+   text-align: center;
+   padding-bottom: 3%;
+  }
+  
+  .tempSet h2 {
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  }
+
+
+  @media (max-width:8000px){
+    .tempSet h2{
+        
+        font-size: calc(0.6vw + 0.25rem);
+    }
+    
+}
+
+
+@media (max-width:0px){
+    .tempSet h2{
+        
+        font-size: calc(0.4vw + 1.25rem);
+    }
+    
+}
+
+  .tempSet h1{
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-size: 5rem;
+  }
+
+
+  @media (max-width:8000px){
+    .tempSet h1{
+        
+        font-size: calc(3.0vw + 0.25rem);
+    }
+    
+}
+
+
+@media (max-width:0px){
+    .tempSet h1{
+        
+        font-size: calc(2.0vw + 1.25rem);
+    }
+    
+}
+
+
+  .minMax p{
+    font-size: 12px;
+  }
+  
+  .des{
+
+    text-align: center;
+  }
+  
+  .des h1{
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-size: 5rem;
+  }
+
+  .des h1 img{
+    width:3rem;
+    height: 3rem;
+  }
+
+   
+  @media (max-width:8000px){
+    .des h1 img{
+        
+        width:  calc(1.8vw + 0.25rem);
+        height: calc(1.8vw + 0.25rem);
+    }
+    
+}
+
+
+@media (max-width:0px){
+    .des h1 img{
+        
+        width:  calc(0.8vw + 0.25rem);
+        height: calc(0.8vw + 0.25rem);
+    }
+    
+}
+  
+  
+  @media (max-width:8000px){
+    .des h1{
+        
+        font-size: calc(0.8vw + 0.25rem);
+    }
+    
+}
+
+
+@media (max-width:0px){
+    .des h1{
+        
+        font-size: calc(0.3vw + 1.25rem);
+    }
+    
+}
+
+  
+  .detail{
+    background-color: gray;
+  }
+  
+  .details h1{
+    color: white;
+    font-weight: 50px;
+    
+  }
+
+  @media (max-width:5000px){
+    .details h1{
+        
+        font-size: calc(0.2vw + 0.5rem);
+    }
+    
+}
+
+
+@media (max-width:0px){
+    .details h1{
+        
+        font-size: calc(1.2vw + 1.10rem);
+    }
+    
+}
+
+  .b01{
+    text-align: center;
+  
+  
+  }
+  
+  .b02{
+   margin-top: 5%;
+   
+    border-left: 1px solid #CDCDCD;
+    
+    text-align: center;
+  
+  }
+
+  .close{
+    text-align: right;
+  }
+
+  .cbtn{
+    cursor: pointer;
+    
+    background-color: transparent;
+    margin-right: 2%;
+    border: none;
+    text-align: right;
+    font-size: 1.5em;
+    color: white;
+    font-size: 3rem;
+
+  }
+
+  .cbtn:hover{
+    color: darkred;
+  }
+  
+  .cbtn2{
+    cursor: pointer;
+    
+    background-color: transparent;
+    margin-right: 2%;
+    border: none;
+    text-align: right;
+    font-size: 1.5em;
+    color: white;
+    font-size: 3rem;
+
+  }
+
+  .cbtn2:hover{
+    color: darkred;
+  }
+  
+  @media (max-width:8000px){
+    .cbtn2{
+        
+      font-size:  calc(2.0vw + 0.25rem);
+  
+    }
+    
+}
+
+
+  @media (max-width:8000px){
+    .cbtn{
+        
+      font-size:  calc(1.2vw + 0.25rem);
+  
+    }
+    
+}
+
+
+@media (max-width:0px){
+    .cbtn{
+        
+      font-size:  calc(0.8vw + 0.25rem);
+      
+    }
+    
+}
+
+
+  .cl{
+    padding: 0;
+    vertical-align: top;
+  }
+
+  .clickable{
+    cursor: pointer;
+  
+    
+  }
+
+  
+  .clickable:hover {
+    background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(8px);
+    
+  }

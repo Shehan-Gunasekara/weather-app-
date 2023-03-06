@@ -1,15 +1,15 @@
 import React from 'react';
 import { Route, Routes, Router, BrowserRouter } from 'react-router-dom';
-import AllCities from './pages/allCitiesPage';
-import OneCity from './pages/oneCityPage';
+import Dashboard from './pages/DashboardPage';
+import ViewWeather from './pages/ViewWeatherPage';
 
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<AllCities />} />
-        <Route path="/oneCity" element={<OneCity />} />
+        <Route path="/" element={<Dashboard />} />
+        <Route path="/ViewWeather" element={<ViewWeather />} />
       </Routes>
     </BrowserRouter>
   );

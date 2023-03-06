@@ -3,12 +3,14 @@ import React, { Component } from 'react';
 import {Grid } from '@mui/material'
 
 //import css
-import "../assets/LayoutCSS/PageContainer.css"
+import "./PageContainer.css"
+import "./Footer.css"
+import "./Title.css"
 
 //import sub components
-import Titile from "./subComponents/Titile";
-import OneCityData from "./subComponents/oneCityData";
 
+import LargeWeatherCard from "./largeWeatherCard/LargeWeatherCard";
+import Background from "../../assets/backgroundImages/iconeImage/titleIcon.png";
 //this function return the selected wheather data of one city
 export default class componentName2 extends Component {
 
@@ -35,10 +37,14 @@ export default class componentName2 extends Component {
     }
 
     render() {
-        return (<div className="body-div">
+        return (
+        <div>
+        <div className="body-div">
             <br />
             {/*call subcomponent*/}
-            <Titile />
+            <div className="title">
+         <h1><img src={Background} />Weather App</h1>
+    </div>
 
             <div >
                 <Grid container spacing={5}>
@@ -50,7 +56,7 @@ export default class componentName2 extends Component {
                                 <Grid item xs={7} xl={7} lg={7} md={7} sm={7}>
                                     <div className="contentController">
                                         {/*call sub component*/}
-                                        <OneCityData
+                                        <LargeWeatherCard
                                              dataSet={city}
                                             condition={true}
                                         />
@@ -64,6 +70,11 @@ export default class componentName2 extends Component {
                 </Grid>
             </div>
         </div>
+             <div className="Footer">
+             <div className='content'>
+               <p>2021 Fidenz Technologies</p>
+             </div>
+           </div></div>
         );
     }
 }
