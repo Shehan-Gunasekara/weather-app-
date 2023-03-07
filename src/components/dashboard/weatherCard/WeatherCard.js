@@ -86,7 +86,7 @@ const oneCityData = props => {
         <div>
 
             {/*creating single component and re use it*/}
-            <Card sx={{ maxWidth: 4000 }} className={props.condition ? 'notclickable' : 'clickable'} >
+            <Card sx={{ maxWidth: 4500 }} className={props.condition ? 'notclickable' : 'clickable'} >
 
 
                 <Typography variant="body2" color="text.secondary"

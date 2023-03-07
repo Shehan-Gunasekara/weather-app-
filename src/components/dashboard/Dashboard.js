@@ -38,7 +38,7 @@ export default class componentName extends Component {
         const services = new ToDoService();
 
         //get API key from environment variable
-    
+
 
         //data caching mechanism
         localArr = JSON.parse(localStorage.getItem('weather'))  //get data from local storage
@@ -78,7 +78,7 @@ export default class componentName extends Component {
 
                         //request weather data using lan and lot
 
-                       await services.getWeatherData(cityData.data[0].lon,cityData.data[0].lat)
+                        await services.getWeatherData(cityData.data[0].lon, cityData.data[0].lat)
                             .then((weatherData) => {
                                 weatherArr.push(weatherData.data);
                             })
@@ -116,58 +116,72 @@ export default class componentName extends Component {
     }
 
     render() {
-        return (<div>
-        <div className="body-div">
-            <br />
-            {/*import title*/}
-            <div className="title">
-                <h1><img src={Background} />Weather App</h1>
+        return (
+            <div>
+                <div className="body-div">
+                    <div className="cloud one"></div>
+                    <div className="cloud2 two"></div>
+                    <div className="cloud3 three"></div>
+             
+                    {/*import title*/}
+                    <div className="title">
+                        <p><img src={Background} />Weather App</p>
+                    </div>
+                    {/*import search*/}
+                    <div className="search">
+                        {/*Creating search bar  */}
+                        <Grid container spacing={0}>
+                            <Grid item xs={120} xl={80} lg={60} md={30} sm={30}>
+                                <form >
+                                    <input type="text" className="inputText" placeholder="Enter a city" />
+                                    <button className="btn" type="submit">Add City</button>
+                                </form>
+                            </Grid>
+                        </Grid>
+                    </div>
+
+
+                    <div className="contentData">
+                        <br />
+
+
+
+                        <Grid container spacing={5}>
+                            <Grid item xs={2.6} xl={2.215} lg={5} md={0.5} sm={0.5}>
+                            </Grid>
+                            <Grid item xs={9.2} xl={9} lg={10.5} md={11} sm={11.0}>
+                                <Grid container spacing={0}>
+
+                                    {   //get Data using map
+                                        this.state.weather.length != 0 && this.state.weather.map((data) => {
+
+                                            return (
+                                                <Grid item xs={6} xl={6} lg={6} md={6} sm={6}>
+
+                                                    {/*call sub component*/}
+                                                    <WeatherCard
+                                                        condition={false}
+                                                        dataSet={data}
+                                                        deleteClickHandler={this.deleteCity.bind(this, data.id)} />
+                                                </Grid>
+                                            )
+                                        })
+                                    }
+                                </Grid>
+                            </Grid>
+                        </Grid>
+
+                    </div>
+
+                    <div className="Footer">
+                        <div className='content2'>
+                            <p>2021 Fidenz Technologies</p>
+                        </div>
+                    </div>
+                    
+                </div>
+
             </div>
-            {/*import search*/}
-            <div className="search">
-            {/*Creating search bar  */}
-            <Grid container spacing={0}>
-                <Grid item xs={120} xl={80} lg={60} md={30} sm={30}>
-                <form >
-                    <input type="text" className="inputText"  placeholder="Enter a city" />
-                    <button className="btn" type="submit">Add City</button>
-                    </form>
-                </Grid>
-            </Grid>
-        </div>
-
-
-            <Grid container spacing={5}>
-                <Grid item xs={2.6} xl={1} lg={1.5} md={0.5} sm={0.5}>
-                </Grid>
-                <Grid item xs={9.2} xl={10} lg={10.5} md={11} sm={11.0}>
-                    <Grid container spacing={5}>
-
-                        {   //get Data using map
-                            this.state.weather.length != 0 && this.state.weather.map((data) => {
-
-                                return (
-                                    <Grid item xs={10} xl={4} lg={5.2} md={6} sm={6}>
-
-                                        {/*call sub component*/}
-                                        <WeatherCard
-                                            condition={false}
-                                            dataSet={data}
-                                            deleteClickHandler={this.deleteCity.bind(this, data.id)} />
-                                    </Grid>
-                                )
-                            })
-                        }
-                    </Grid>
-                </Grid>
-            </Grid>
-            
-        </div>
-        <div className="Footer">
-        <div className='content'>
-          <p>2021 Fidenz Technologies</p>
-        </div>
-      </div></div>
         );
     }
 }

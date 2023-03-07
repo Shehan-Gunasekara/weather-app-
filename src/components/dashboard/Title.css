@@ -1,11 +1,13 @@
 .title{
+ 
     text-align: center;
 }
 
 
-.title h1{
+.title p{
     color: white;
     font-size: 3rem;
+    font-family: Tahoma, sans-serif;
 }
 .title img{
     width: 4%;
@@ -14,16 +16,16 @@
 }
 
 @media (max-width:8000px){
-    .title h1{
+    .title p{
         
-        font-size: calc(1.8vw + 0.25rem);
+        font-size: calc(1.3vw + 0.25rem);
     }
     
 }
 
 
 @media (max-width:0px){
-    .title h1{
+    .title p{
         
         font-size: calc(0.6vw + 1.25rem);
     }
