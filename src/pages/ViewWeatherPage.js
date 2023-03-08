@@ -1,18 +1,12 @@
 import React from "react";
+import ViewWeather from "../components/viewWeather/viewWeather";
 
-//import components
-
-import OneCityData from "../components/viewWeather/viewWeather";
-
-function  allCities() {
-
-    //return selected one city weather data
-    return(
-        <div>
-            <OneCityData/>
-   
-        </div>
-    )
+//return selected selected city weather data
+function allCities() {
+  return (
+    <div>
+      <ViewWeather />
+    </div>
+  );
 }
-
 export default allCities;

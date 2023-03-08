@@ -1,0 +1,574 @@
+.lnt p {
+  color: white;
+  font-size: 1rem;
+}
+
+@media (max-width: 8000px) {
+  .lnt p {
+    font-size: calc(0.4vw + 0.25rem);
+  }
+}
+
+@media (max-width: 0px) {
+  .lnt p {
+    font-size: calc(0.4vw + 1.25rem);
+  }
+}
+
+.lnt .location p {
+  color: white;
+  font-size: 4rem;
+}
+
+@media (max-width: 8000px) {
+  .lnt .location p {
+    font-size: calc(1.4vw + 0.1rem);
+  }
+}
+
+@media (max-width: 0px) {
+  .lnt .location p {
+    font-size: calc(0.9vw + 0.25rem);
+  }
+}
+
+.time p {
+  font-size: 1rem;
+}
+
+@media (max-width: 8000px) {
+  .time p {
+    font-size: calc(0.7vw + 0.15rem);
+  }
+}
+
+.tempSet {
+  text-align: center;
+  padding-bottom: 3%;
+}
+
+.tempSet p {
+  color: white;
+}
+
+.tempSet .temp h1 {
+  color: white;
+  text-shadow: none;
+  font-weight: normal;
+}
+
+@media (max-width: 8000px) {
+  .tempSet p {
+    font-size: calc(1.9vw + 0.25rem);
+  }
+}
+
+@media (max-width: 0px) {
+  .tempSet p {
+    font-size: calc(0.4vw + 1.25rem);
+  }
+}
+
+.tempSet h1,.tempSet p {
+  display: inline;
+}
+
+@media (max-width: 8000px) {
+  .tempSet h2 {
+    font-size: calc(0.6vw + 0.25rem);
+  }
+}
+
+@media (max-width: 0px) {
+  .tempSet h2 {
+    font-size: calc(0.4vw + 1.25rem);
+  }
+}
+
+.tempSet h1 {
+  color: white;
+  font-size: 5rem;
+}
+
+@media (max-width: 8000px) {
+  .tempSet h1 {
+    font-size: calc(3vw + 0.25rem);
+  }
+}
+
+@media (max-width: 420px) {
+  .tempSet h1 {
+    font-size: calc(0.01vw + 0.8rem);
+  }
+}
+
+@media (max-width: 370px) {
+  .tempSet h1 {
+    font-size: calc(0.01vw + 0.5rem);
+  }
+}
+
+.tempMinMax {
+  text-align: center;
+}
+
+.tempMinMax .minMax p {
+  color: white;
+  font-size: 5rem;
+}
+
+@media (max-width: 8000px) {
+  .tempMinMax .minMax p {
+    font-size: calc(0.5vw + 0.25rem);
+  }
+}
+
+@media (max-width: 0px) {
+  .tempMinMax .minMax p {
+    font-size: calc(2vw + 1.25rem);
+  }
+}
+
+.des {
+  text-align: center;
+}
+
+.des p {
+  color: white;
+  font-size: 5rem;
+}
+
+.des p img {
+  width: 3rem;
+  height: 3rem;
+}
+
+@media (max-width: 8000px) {
+  .des p img {
+    width: calc(1.8vw + 0.25rem);
+    height: calc(1.8vw + 0.25rem);
+  }
+}
+
+@media (max-width: 0px) {
+  .des p img {
+    width: calc(0.8vw + 0.25rem);
+    height: calc(0.8vw + 0.25rem);
+  }
+}
+
+@media (max-width: 8000px) {
+  .des p {
+    font-size: calc(0.8vw + 0.25rem);
+  }
+}
+
+@media (max-width: 0px) {
+  .des p {
+    font-size: calc(0.3vw + 1.25rem);
+  }
+}
+
+.details {
+  background-color: #383b47;
+  padding-top: 3.8vh;
+  padding-bottom: 4vh;
+}
+
+@media (max-width: 5000px) {
+  .details {
+    padding-top: calc(0.2vw + 0.5rem);
+    padding-bottom: calc(0.2vw + 0.5rem);
+  }
+}
+
+.details h1 {
+  color: white;
+  font-weight: 50px;
+}
+
+@media (max-width: 5000px) {
+  .details h1 {
+    font-size: calc(0.2vw + 0.5rem);
+  }
+}
+
+@media (max-width: 0px) {
+  .details h1 {
+    font-size: calc(1.2vw + 1.1rem);
+  }
+}
+
+.b01 {
+  text-align: center;
+}
+
+.b01 h1 {
+  margin: 0.5vh;
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+@media (max-width: 4000px) {
+  .b01 h1 {
+    font-size: calc(0.1vw + 1.1rem);
+  }
+}
+
+@media (max-width: 1960px) {
+  .b01 h1 {
+    font-size: calc(0vw + 1.1rem);
+  }
+}
+
+@media (max-width: 1750px) {
+  .b01 h1 {
+    font-size: calc(0vw + 1rem);
+  }
+}
+
+@media (max-width: 1618px) {
+  .b01 h1 {
+    font-size: calc(0vw + 0.9rem);
+  }
+}
+
+@media (max-width: 1480px) {
+  .b01 h1 {
+    font-size: calc(0vw + 0.8rem);
+  }
+}
+
+@media (max-width: 1330px) {
+  .b01 h1 {
+    font-size: calc(0vw + 0.7rem);
+  }
+}
+
+@media (max-width: 1169px) {
+  .b01 h1 {
+    font-size: calc(0vw + 0.6rem);
+  }
+}
+
+@media (max-width: 1027px) {
+  .b01 h1 {
+    font-size: calc(0vw + 0.5rem);
+  }
+}
+
+@media (max-width: 879px) {
+  .b01 h1 {
+    font-size: calc(0vw + 0.4rem);
+  }
+}
+
+@media (max-width: 740px) {
+  .b01 h1 {
+    font-size: calc(0vw + 0.3rem);
+  }
+}
+
+@media (max-width: 584px) {
+  .b01 h1 {
+    font-size: calc(0vw + 0.2rem);
+  }
+}
+
+@media (max-width: 448px) {
+  .b01 h1 {
+    font-size: calc(0vw + 0.1rem);
+  }
+}
+
+.b02 h1 {
+  margin: 0.5vh;
+  font-size: 0.7rem;
+  font-weight: normal;
+}
+
+@media (max-width: 4000px) {
+  .b02 h1 {
+    font-size: calc(0.1vw + 1.1rem);
+  }
+}
+
+@media (max-width: 1960px) {
+  .b02 h1 {
+    font-size: calc(0vw + 1.1rem);
+  }
+}
+
+@media (max-width: 1750px) {
+  .b02 h1 {
+    font-size: calc(0vw + 1rem);
+  }
+}
+
+@media (max-width: 1618px) {
+  .b02 h1 {
+    font-size: calc(0vw + 0.9rem);
+  }
+}
+
+@media (max-width: 1480px) {
+  .b02 h1 {
+    font-size: calc(0vw + 0.8rem);
+  }
+}
+
+@media (max-width: 1330px) {
+  .b02 h1 {
+    font-size: calc(0vw + 0.7rem);
+  }
+}
+
+@media (max-width: 1169px) {
+  .b02 h1 {
+    font-size: calc(0vw + 0.6rem);
+  }
+}
+
+@media (max-width: 1027px) {
+  .b02 h1 {
+    font-size: calc(0vw + 0.5rem);
+  }
+}
+
+@media (max-width: 879px) {
+  .b02 h1 {
+    font-size: calc(0vw + 0.4rem);
+  }
+}
+
+@media (max-width: 740px) {
+  .b02 h1 {
+    font-size: calc(0vw + 0.3rem);
+  }
+}
+
+@media (max-width: 584px) {
+  .b02 h1 {
+    font-size: calc(0vw + 0.2rem);
+  }
+}
+
+@media (max-width: 448px) {
+  .b02 h1 {
+    font-size: calc(0vw + 0.1rem);
+  }
+}
+
+.b02 {
+  margin-top: 5%;
+  border-left: 2px solid #515566;
+  text-align: center;
+}
+
+.b02 h1 {
+  margin: 0.5vh;
+}
+
+.close {
+  text-align: right;
+}
+
+.cbtn {
+  cursor: pointer;
+  background-color: transparent;
+  margin-right: 2%;
+  border: none;
+  text-align: right;
+  font-size: 1.5em;
+  color: white;
+  font-size: 3rem;
+}
+
+.cbtn:hover {
+  color: darkred;
+}
+
+@media (max-width: 8000px) {
+  .cbtn2 {
+    font-size: calc(2vw + 0.25rem);
+  }
+}
+
+@media (max-width: 8000px) {
+  .cbtn {
+    font-size: calc(1.2vw + 0.25rem);
+  }
+}
+
+@media (max-width: 0px) {
+  .cbtn {
+    font-size: calc(0.8vw + 0.25rem);
+  }
+}
+
+.cl {
+  padding: 0;
+  vertical-align: top;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.clickable:hover {
+  transform: translateY(8px);
+}
+
+.bgDesign {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "overlap";
+  height: 2rem;
+  overflow: hidden;
+  position: relative;
+}
+
+@media (max-width: 4000px) {
+  .bgDesign {
+    height: calc(4.9vw + 11.25rem);
+  }
+}
+
+@media (max-width: 2000px) {
+  .bgDesign {
+    height: calc(1.9vw + 11.25rem);
+  }
+}
+
+@media (max-width: 1830px) {
+  .bgDesign {
+    height: calc(1.3vw + 11.25rem);
+  }
+}
+
+@media (max-width: 1500px) {
+  .bgDesign {
+    height: calc(-1vw + 11.25rem);
+  }
+}
+
+@media (max-width: 1300px) {
+  .bgDesign {
+    height: calc(-3.7vw + 11.25rem);
+  }
+}
+
+@media (max-width: 980px) {
+  .bgDesign {
+    height: calc(-8vw + 11.25rem);
+  }
+}
+
+@media (max-width: 840px) {
+  .bgDesign {
+    height: calc(-9vw + 11.25rem);
+  }
+}
+
+@media (max-width: 730px) {
+  .bgDesign {
+    height: calc(-13vw + 11.25rem);
+  }
+}
+
+@media (max-width: 700px) {
+  .bgDesign {
+    height: calc(-14vw + 11.25rem);
+  }
+}
+
+@media (max-width: 600px) {
+  .bgDesign {
+    height: calc(-17vw + 11.25rem);
+  }
+}
+
+@media (max-width: 510px) {
+  .bgDesign {
+    height: calc(-19vw + 11.25rem);
+  }
+}
+
+@media (max-width: 465px) {
+  .bgDesign {
+    height: calc(-24vw + 11.25rem);
+  }
+}
+
+@media (max-width: 415px) {
+  .bgDesign {
+    height: calc(-26vw + 11.25rem);
+  }
+}
+
+@media (max-width: 391px) {
+  .bgDesign {
+    height: calc(-30vw + 11.25rem);
+  }
+}
+
+@media (max-width: 380px) {
+  .bgDesign {
+    height: calc(-31vw + 11.25rem);
+  }
+}
+
+@media (max-width: 340px) {
+  .bgDesign {
+    height: calc(-40vw + 11.25rem);
+  }
+}
+
+@media (max-width: 320px) {
+  .bgDesign {
+    height: calc(-38vw + 11.25rem);
+  }
+}
+
+.cardCloud.one {
+  top: 55%;
+  width: 100%;
+  height: 0px;
+  background: white;
+}
+
+.cardCloud {
+  position: absolute;
+  left: 0%;
+  border-radius: 1000px;
+  grid-area: overlap;
+}
+
+.cardContent {
+  position: absolute;
+}
+
+.cardCloud:after {
+  opacity: 0.15;
+  content: "";
+  position: absolute;
+  left: 1rem;
+  width: 5rem;
+  height: 8rem;
+  background-image: linear-gradient(white, white, transparent);
+  border-radius: 5rem;
+  background-clip: padding-box;
+}
+
+@media (max-width: 10000px) {
+  .cardCloud:after {
+    border-radius: calc(8.2vw + 0.25rem);
+    width: calc(8.5vw + 0.25rem);
+    height: calc(8.5vw + 0.25rem);
+    left: calc(-4.7vw + 0.25rem);
+    box-shadow: 6vw 0vw 0 -2.1vw white, 10vw 1vw 0 -2.1vw white,
+      14.5vw 0.5vw 0 -1.8vw white, 17.6vw -2.7vw 0 -2vw white,
+      22.4vw 3vw 0 3vw white, 32.4vw 0vw 0 1.8vw white;
+  }
+}

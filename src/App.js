@@ -1,8 +1,7 @@
-import React from 'react';
-import { Route, Routes, Router, BrowserRouter } from 'react-router-dom';
-import Dashboard from './pages/DashboardPage';
-import ViewWeather from './pages/ViewWeatherPage';
-
+import React from "react";
+import { Route, Routes, BrowserRouter } from "react-router-dom";
+import Dashboard from "./pages/DashboardPage";
+import ViewWeather from "./pages/ViewWeatherPage";
 
 function App() {
   return (
