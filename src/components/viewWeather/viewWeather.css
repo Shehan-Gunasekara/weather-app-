@@ -1,0 +1,320 @@
+/* Background Style */
+.body-div {
+  background-color: #213a73;
+  background-repeat: no-repeat, repeat;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.cloud.one {
+  top: 3rem;
+  width: 100%;
+  height: 0px;
+  background: white;
+}
+
+.cloud {
+  position: absolute;
+  left: 0%;
+  border-radius: 1000px;
+  height: 1000px;
+}
+
+.cloud:after {
+  opacity: 0.03;
+  content: "";
+  position: absolute;
+  left: 1rem;
+  width: 5rem;
+  height: 8rem;
+  background-image: linear-gradient(white, white, transparent);
+  border-radius: 5rem;
+  background-clip: padding-box;
+}
+
+@media (max-width: 10000px) {
+  .cloud.one {
+    top: calc(11.2vw + 0.25rem);
+  }
+}
+
+@media (max-width: 10000px) {
+  .cloud:after {
+    border-radius: calc(8.2vw + 0.25rem);
+    width: calc(8.2vw + 0.25rem);
+    height: calc(8.2vw + 0.25rem);
+    left: calc(-4.4vw + 0.25rem);
+    box-shadow: 5.7vw -2.5vw 0 -0.3vw white, 7.7vw 2.2vw 0 -0.3vw white,
+      13.3vw -0.2vw 0 -1vw white, 16.7vw 2.7vw 0 -1vw white,
+      19.7vw 4.2vw 0 -1vw white, 25.2vw 0.7vw 0 -0.31vw white,
+      30.2vw -2vw 0 -2.5vw white, 36.7vw -4.3vw 0 1.8vw white,
+      40.7vw 1vw 0 -0.4vw white, 44.7vw 4vw 0 -0.4vw white,
+      51vw 2.5vw 0 0.4vw white, 56.5vw 0.5vw 0 -2.4vw white,
+      57.5vw -1vw 0 -2.4vw white, 62.2vw -2.2vw 0 0.4vw white,
+      69.8vw -4.5vw 0 0.1vw white, 72.5vw -1.5vw 0 -1.1vw white,
+      78.4vw -1.5vw 0 -0.9vw white, 81.5vw 0.9vw 0 -2vw white,
+      86.5vw -0.3vw 0 -1vw white, 91.9vw -0.9vw 0 -0.1vw white,
+      98.5vw -0.1vw 0 -1.5vw white;
+  }
+}
+
+.cloud2.two {
+  opacity: 0.3;
+  top: 3rem;
+  width: 100%;
+  height: 0px;
+  background: white;
+}
+
+.cloud2 {
+  position: absolute;
+  left: 0%;
+
+  border-radius: 1000px;
+  grid-area: overlap;
+  height: 1000px;
+}
+
+.cloud2:after {
+  opacity: 0.5;
+  content: "";
+  position: absolute;
+  left: 1rem;
+  width: 5rem;
+  height: 8rem;
+  background-image: linear-gradient(white, white, transparent);
+  border-radius: 5rem;
+  background-clip: padding-box;
+}
+
+@media (max-width: 10000px) {
+  .cloud2.two {
+    top: calc(19.2vw + 0.25rem);
+  }
+}
+
+@media (max-width: 10000px) {
+  .cloud2:after {
+    border-radius: calc(8.2vw + 0.25rem);
+    width: calc(5.5vw + 0.25rem);
+    height: calc(5.2vw + 0.25rem);
+    left: calc(0.9vw + 0.25rem);
+    box-shadow: -2vw 3.5vw 0 0.5vw white, 4.2vw 1vw 0 0.5vw white,
+      7.2vw -2vw 0 0.5vw white, 11.5vw -0.8vw 0 0.5vw white,
+      16.5vw 1.8vw 0 0.5vw white, 21.5vw 1.9vw 0 0.5vw white,
+      25.5vw -1.2vw 0 3.5vw white, 29.5vw -1vw 0 2vw white,
+      33.5vw 0.9vw 0 1.5vw white, 38.5vw 0.7vw 0 1vw white,
+      43.5vw 1vw 0 0.5vw white, 48.5vw 3.2vw 0 0.5vw white,
+      54.5vw -1vw 0 1.8vw white, 58.5vw -1.2vw 0 1.9vw white,
+      65.5vw -2.5vw 0 2.8vw white, 72.5vw -1.8vw 0 2vw white,
+      78.5vw -1.8vw 0 0.8vw white, 77.5vw -0.5vw 0 0.6vw white,
+      85.2vw -3vw 0 0.3vw white, 89.3vw -1.5vw 0 0.3vw white,
+      95.2vw 0vw 0 0.3vw white;
+  }
+}
+
+.cloud3.three {
+  opacity: 1.3;
+  top: 3rem;
+  width: 100%;
+  height: 0px;
+  background: black;
+}
+
+.cloud3 {
+  position: absolute;
+  left: 0%;
+  border-radius: 1000px;
+  grid-area: overlap;
+  height: 1000px;
+}
+
+.cloud3:after {
+  opacity: 2.1;
+  content: "";
+  position: absolute;
+  left: 1rem;
+  width: 5rem;
+  height: 8rem;
+  background: #1e2027;
+  border-radius: 5rem;
+  background-clip: padding-box;
+}
+
+@media (max-width: 10000px) {
+  .cloud3.three {
+    top: calc(23.2vw + 0.25rem);
+  }
+}
+
+@media (max-width: 10000px) {
+  .cloud3:after {
+    border-radius: calc(8.2vw + 0.25rem);
+    width: calc(5.5vw + 0.25rem);
+    height: calc(5.2vw + 0.25rem);
+    left: calc(-5vw + 0.25rem);
+    box-shadow: 3.2vw 2.9vw 0 0.5vw #1e2027, 6.5vw 0.9vw 0 -0.8vw #1e2027,
+      9.5vw -0.5vw 0 0.1vw #1e2027, 12.9vw 0.51vw 0 0.1vw #1e2027,
+      15.7vw -2.7vw 0 0.1vw #1e2027, 19.7vw -1vw 0 0.1vw #1e2027,
+      22.7vw 1vw 0 0.5vw #1e2027, 28.7vw 2vw 0 0.5vw #1e2027,
+      30.7vw 1.5vw 0 0.7vw #1e2027, 34.9vw 1vw 0 0.6vw #1e2027,
+      38.7vw 1.5vw 0 0.5vw #1e2027, 40.7vw 1.7vw 0 0.5vw #1e2027,
+      44.7vw 1.8vw 0 0.5vw #1e2027, 48.7vw 2vw 0 0.1vw #1e2027,
+      54vw 1.2vw 0 -0.1vw #1e2027, 58vw -1vw 0 -0.1vw #1e2027,
+      62vw -2vw 0 -0.1vw #1e2027, 66vw -2.5vw 0 0.5vw #1e2027,
+      71vw -3.5vw 0 0.8vw #1e2027, 76vw -2.5vw 0 1vw #1e2027,
+      81.8vw -2vw 0 -0.2vw #1e2027, 84.8vw -0.3vw 0 -1.2vw #1e2027,
+      85.5vw -1.9vw 0 -1.5vw #1e2027, 88.9vw -3.2vw 0 0.1vw #1e2027,
+      94.9vw -4.5vw 0 0.5vw #1e2027, 96.9vw -1.8vw 0 -0.3vw #1e2027,
+      100.9vw -1.8vw 0 -0.8vw #1e2027, 15.9vw 1.8vw 0 2.8vw #1e2027,
+      92.9vw 3.9vw 0 5.8vw #1e2027, 81.9vw 4.9vw 0 4.8vw #1e2027,
+      75.9vw 4.9vw 0 4.8vw #1e2027, 70.9vw 4.9vw 0 4.8vw #1e2027,
+      62.9vw 4.9vw 0 4.8vw #1e2027;
+  }
+}
+
+.cloud3::before {
+  opacity: 2.1;
+  content: "";
+  position: absolute;
+  left: 0rem;
+  width: 5rem;
+  height: 100%;
+  background: #1e2027;
+  background-clip: padding-box;
+  top: 4rem;
+}
+
+@media (max-width: 5000px) {
+  .cloud3::before {
+    width: calc(100vw + 5.25rem);
+    height: calc(300vw + 0.25rem);
+    top: calc(4vw + 0.25rem);
+  }
+}
+.base {
+  width: 100%;
+  top: 1rem;
+  bottom: -45%;
+  background-color: #1e2027;
+  background-repeat: no-repeat, repeat;
+  position: absolute;
+  background-position: center;
+}
+
+@media (max-width: 10000px) {
+  .base {
+    top: calc(27.2vw + 0.25rem);
+    height: calc(200vh + 0.25rem);
+  }
+}
+
+.ViewWeather {
+  position: relative;
+  background-image: linear-gradient(
+    transparent,
+    transparent,
+    transparent,
+    transparent,
+    #1f2128,
+    #1f2128,
+    #1f2128,
+    #1f2128
+  );
+  padding-bottom: 10%;
+  min-height: 100vh;
+  overflow-y: hidden;
+}
+
+.contentController {
+  margin-top: 3.5%;
+}
+
+/* Title CSS */
+.title {
+  margin-top: 6.5vh;
+  text-align: center;
+  position: relative;
+}
+
+.title p {
+  color: white;
+  font-size: 3rem;
+  font-family: Tahoma, sans-serif;
+}
+.title img {
+  width: 4%;
+  height: 4%;
+}
+
+@media (max-width: 8000px) {
+  .title p {
+    font-size: calc(1.3vw + 0.25rem);
+  }
+}
+
+@media (max-width: 0px) {
+  .title p {
+    font-size: calc(0.6vw + 1.25rem);
+  }
+}
+
+@media (max-width: 8000px) {
+  .title img {
+    font-size: calc(1.8vw + 0.25rem);
+  }
+}
+
+@media (max-width: 0px) {
+  .title img {
+    font-size: calc(0.6vw + 1.25rem);
+  }
+}
+
+/* Footer CSS */
+.Footer {
+  bottom: 0;
+  width: 100%;
+  background-color: #30333d;
+  color: #8a8c91;
+  padding: 1rem;
+  box-sizing: border-box;
+
+  position: relative;
+}
+
+.content2 {
+  text-align: center;
+  padding: 2rem 2rem;
+
+  justify-content: center;
+}
+
+.content2 p {
+  color: #8a8c91;
+  font-size: 0.25rem;
+  font-family: Tahoma, sans-serif;
+}
+
+@media (max-width: 8000px) {
+  .content2 p {
+    font-size: calc(0.649vw + 0.25rem);
+  }
+}
+
+@media (max-width: 8000px) {
+  .content2 {
+    padding: calc(0.35vw + 0.25rem);
+  }
+}
+
+@media (max-width: 0px) {
+  .content2 p {
+    font-size: calc(0.6vw + 1.25rem);
+  }
+}
+
+.myData {
+  position: relative;
+}
