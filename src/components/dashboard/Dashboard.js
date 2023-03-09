@@ -8,12 +8,25 @@ import "./Dashboard.css";
 
 //this function return weather details of all cities
 export default class componentName extends Component {
+
+  constructor(props){
+    super(props);
+    this.check=React.createRef();
+    this.check.current=true
+
+  }
+
   state = {
     cities: [],
     weather: [],
   };
 
   componentDidMount = async () => {
+    if(this.check.current){
+      this.check.current=false;
+    console.log("AAAAAAA")
+    console.log(this.check.current)
+ 
     var tempWeatherData = [];
     var localData = [];
     const services = new ToDoService();
@@ -61,6 +74,7 @@ export default class componentName extends Component {
       tempWeatherData = localData;
       this.setState({ weather: tempWeatherData });
     }
+  }
   };
 
   //removing item function

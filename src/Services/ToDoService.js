@@ -11,14 +11,14 @@ class ToDoService {
     this.domain = process.env.REACT_APP_BASE_URL;
   }
 
-  request(url) {
+  request=async(url)=>{
     url = setURL(this.domain, url);
-    return axios.get(url);
+    return await axios.get(url);
   }
 
   getLonLat(cityName) {
     const url = `geo/1.0/direct?q=${cityName}&limit=1&appid=${API_KEY}`;
-    console.log(this.request(url));
+    console.log("AAAAAAAAAAAAAAAAAAA");
     return this.request(url);
   }
 
