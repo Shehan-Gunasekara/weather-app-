@@ -4,29 +4,20 @@ import LargeWeatherCard from "./largeWeatherCard/LargeWeatherCard";
 import Background from "../../assets/iconeImage/titleIcon.png";
 import "./viewWeather.css";
 
-export default function(){
-  const[weatherData,setWeatherData]=useState([]);
+export default function () {
+  const [weatherData, setWeatherData] = useState([]);
+  const check = useRef(true);
 
-const shouldLog = useRef(true);
-
-  useEffect(()=>{
-
-
-    if(shouldLog.current){
-      console.log("AAAAAAAAAAAAAAAAAA")
-      shouldLog.current=false;
-    var localData = [];
-    var data = [];
-    localData = JSON.parse(localStorage.getItem("tempData"));
-    data.push(localData);
-    setWeatherData(data);
-  }
-  },[])
-
-
-  const handleClick = () => {
-    window.location.href = "/";
-  };
+  useEffect(() => {
+    if (check.current) {
+      check.current = false;
+      var localData = [];
+      var data = [];
+      localData = JSON.parse(localStorage.getItem("tempData"));
+      data.push(localData);
+      setWeatherData(data);
+    }
+  }, []);
 
   return (
     <div>
@@ -70,5 +61,4 @@ const shouldLog = useRef(true);
       </div>
     </div>
   );
-
 }

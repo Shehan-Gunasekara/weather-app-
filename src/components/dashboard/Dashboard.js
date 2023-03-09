@@ -20,10 +20,8 @@ export default class componentName extends Component {
   };
 
   componentDidMount = async () => {
-    if (this.check.current) {
+    if (this.check.current) {     //componentDidMount run only one time 
       this.check.current = false;
-      console.log("AAAAAAA");
-      console.log(this.check.current);
 
       var tempWeatherData = [];
       var localData = [];
@@ -51,7 +49,6 @@ export default class componentName extends Component {
 
         //get Data from API
         for (var i = 0; i < cities.length; i++) {
-          console.log("FFFFFFFFFFFFFFFFF")
           await services
             .getLonLat(cities[i].CityName)
             .then(async (cityData) => {
@@ -62,7 +59,6 @@ export default class componentName extends Component {
                 });
             });
         }
-        console.log(tempWeatherData);
         this.setState({ weather: tempWeatherData });
 
         //store data in local storage
