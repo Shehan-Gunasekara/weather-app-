@@ -8,12 +8,10 @@ import "./Dashboard.css";
 
 //this function return weather details of all cities
 export default class componentName extends Component {
-
-  constructor(props){
+  constructor(props) {
     super(props);
-    this.check=React.createRef();
-    this.check.current=true
-
+    this.check = React.createRef();
+    this.check.current = true;
   }
 
   state = {
@@ -22,59 +20,62 @@ export default class componentName extends Component {
   };
 
   componentDidMount = async () => {
-    if(this.check.current){
-      this.check.current=false;
-    console.log("AAAAAAA")
-    console.log(this.check.current)
- 
-    var tempWeatherData = [];
-    var localData = [];
-    const services = new ToDoService();
+    if (this.check.current) {
+      this.check.current = false;
+      console.log("AAAAAAA");
+      console.log(this.check.current);
 
-    //data caching mechanism
-    localData = JSON.parse(localStorage.getItem("weather"));
-    var timespan = localStorage.getItem("date");
-    if (localData) {
-      const res = new Date().getTime() > timespan;
-      if (res) {
-        localStorage.removeItem("weather");
-        localData = [];
+      var tempWeatherData = [];
+      var localData = [];
+      const services = new ToDoService();
+
+      //data caching mechanism
+      localData = JSON.parse(localStorage.getItem("weather"));
+      var timespan = localStorage.getItem("date");
+      if (localData) {
+        const res = new Date().getTime() > timespan;
+        if (res) {
+          localStorage.removeItem("weather");
+          localData = [];
+        }
       }
-    }
-    if (localData == null || localData.length == 0) {
-      const cities = [];
+      if (localData == null || localData.length == 0) {
+        const cities = [];
 
-      //fetch data from json file
-      Object.values(city.List).map((rec) => {
-        cities.push(rec);
-      });
-      this.setState({ weather: [] });
-      this.setState({ cities: cities });
-
-      //get Data from API
-      for (var i = 0; i < cities.length; i++) {
-        await services.getLonLat(cities[i].CityName).then(async (cityData) => {
-          await services
-            .getWeatherData(cityData.data[0].lon, cityData.data[0].lat)
-            .then((weatherData) => {
-              tempWeatherData.push(weatherData.data);
-            });
+        //fetch data from json file
+        Object.values(city.List).map((rec) => {
+          cities.push(rec);
         });
-      }
-      console.log(tempWeatherData);
-      this.setState({ weather: tempWeatherData });
+        this.setState({ weather: [] });
+        this.setState({ cities: cities });
 
-      //store data in local storage
-      if (tempWeatherData.length != 0) {
-        var dates = new Date().setMinutes(new Date().getMinutes() + 5);
-        localStorage.setItem("date", dates);
-        localStorage.setItem("weather", JSON.stringify(tempWeatherData));
+        //get Data from API
+        for (var i = 0; i < cities.length; i++) {
+          console.log("FFFFFFFFFFFFFFFFF")
+          await services
+            .getLonLat(cities[i].CityName)
+            .then(async (cityData) => {
+              await services
+                .getWeatherData(cityData.data[0].lon, cityData.data[0].lat)
+                .then((weatherData) => {
+                  tempWeatherData.push(weatherData.data);
+                });
+            });
+        }
+        console.log(tempWeatherData);
+        this.setState({ weather: tempWeatherData });
+
+        //store data in local storage
+        if (tempWeatherData.length != 0) {
+          var dates = new Date().setMinutes(new Date().getMinutes() + 5);
+          localStorage.setItem("date", dates);
+          localStorage.setItem("weather", JSON.stringify(tempWeatherData));
+        }
+      } else {
+        tempWeatherData = localData;
+        this.setState({ weather: tempWeatherData });
       }
-    } else {
-      tempWeatherData = localData;
-      this.setState({ weather: tempWeatherData });
     }
-  }
   };
 
   //removing item function
